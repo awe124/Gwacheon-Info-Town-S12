@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>과천지식정보타운 S12블록 행복주택</title>
+  <meta name="description" content="과천지식정보타운 S12블록 행복주택 안내. 총 1,424세대, 전용 16㎡~36㎡. 청춘과 천생연분, 미래를 위한 행복 지정석." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:title" content="과천지식정보타운 S12블록 행복주택" />
+  <meta property="og:description" content="청춘과 천생연분, 미래를 위한 행복 지정석. 과천지식정보타운 S12블록 행복주택 안내." />
+  <meta property="og:image" content="assets/landing.jpg" />
+  <meta property="og:image:alt" content="과천지식정보타운 S12블록 행복주택 안내 이미지" />
+  <meta name="theme-color" content="#765660" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#top">본문 바로가기</a>
+  <header class="topbar" aria-label="빠른 이동 메뉴">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="과천지식정보타운 S12블록 상단으로 이동">
+        <span class="brand-mark" aria-hidden="true">LH</span>
+        <span class="brand-name">과천지식정보타운 <strong>S12블록</strong><small>행복주택</small></span>
+      </a>
+      <nav class="quick-nav" aria-label="주요 링크">
+        <a href="https://www.lh.or.kr" target="_blank" rel="noopener noreferrer">LH 홈페이지<span class="sr-only"> (새 창)</span></a>
+        <a href="https://apply.lh.or.kr" target="_blank" rel="noopener noreferrer">LH 청약플러스<span class="sr-only"> (새 창)</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="page">
+    <section class="visual" aria-labelledby="page-title">
+      <h1 id="page-title" class="sr-only">과천지식정보타운 S12블록 행복주택 안내</h1>
+      <img class="landing-image" src="assets/landing.jpg" width="723" height="2048" fetchpriority="high"
+        alt="청춘과 천생연분, 미래를 위한 행복 지정석. 과천지식정보타운 S12블록 행복주택 총 1,424세대, 전용 16㎡~36㎡. 입지와 교통, 생활환경, 단지 조감도 및 배치도 안내." />
+      <div class="sr-only">
+        <h2>사업 안내</h2>
+        <p>과천지식정보타운 S12블록 행복주택. 총 1,424세대, 전용면적 16㎡~36㎡.</p>
+        <p>관악산 자락 서울과 안양 사이에 위치한 과천지식정보타운. 도시의 편리함과 자연의 쾌적함이 공존하는 곳입니다.</p>
+        <p>이미지에는 지역조감도, 교통망도, 지구조감도, 토지이용계획도, 단지조감도와 단지배치도가 포함되어 있습니다.</p>
+        <h2>문의 및 청약 안내</h2>
+        <p>LH 콜센터 1600-1004. 한국토지주택공사 경기남부지역본부. 경기도 성남시 분당구 성남대로 54번길 3 (구미동 175).</p>
+        <p>공급 일정과 신청 자격 등 자세한 사항은 LH 청약플러스 입주자모집공고에서 확인해 주세요.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="floating-cta" aria-label="고정 바로가기 버튼">
+    <a class="cta cta-apply" href="https://apply.lh.or.kr" target="_blank" rel="noopener noreferrer">
+      청약플러스 바로가기 <span aria-hidden="true">↗</span><span class="sr-only"> (새 창)</span>
+    </a>
+  </div>
+  <button class="to-top" type="button" aria-label="상단으로 이동" hidden>↑</button>
+
+  <script>
+    const topButton = document.querySelector('.to-top');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const onScroll = () => { topButton.hidden = window.scrollY <= 500; };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('pageshow', onScroll);
+    onScroll();
+    topButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+    });
+  </script>
+</body>
+</html>
