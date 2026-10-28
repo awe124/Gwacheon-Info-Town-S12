@@ -91,3 +91,65 @@ a:focus-visible, button:focus-visible { outline: 3px solid #096cc5; outline-offs
   .cta { min-height: 56px; font-size: 15px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+/* 사이트 하단 운영 정보 */
+.site-footer {
+  padding: 32px 22px;
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.footer-lh {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 20px;
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.footer-lh a {
+  color: #fff;
+}
+
+.footer-lh a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer-business {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer-business strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 26px 16px;
+  }
+
+  .footer-lh {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 16px;
+  }
+
+  .footer-business {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 13px;
+  }
+}
